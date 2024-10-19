@@ -26,4 +26,11 @@ participant server
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server-->>browser: The server responds with HTTP status code 302
+    deactivate server
+
+    Note right of browser: The server asks the browser to perform a new HTTP GET request to the address defined in the header's Location - the address notes.
 ```
