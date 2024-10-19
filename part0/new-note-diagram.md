@@ -27,6 +27,8 @@ participant server
 
     Note right of browser: The browser executes the callback function that renders the notes
 
+    Note right of browser: When the button on the form is clicked, the browser will send the user input to the server.
+
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server-->>browser: The server responds with HTTP status code 302
