@@ -23,7 +23,7 @@ participant server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: [{"content": "uusi",
-        "date": "2024-10-19T08:15:02.222Z"}, ... ]
+    "date": "2024-10-19T08:15:02.222Z"}, ... ]
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
@@ -59,7 +59,7 @@ participant server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: [{"content": "uusi",
-        "date": "2024-10-19T08:15:02.222Z" }, ... ]
+    "date": "2024-10-19T08:15:02.222Z" }, ... ]
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
